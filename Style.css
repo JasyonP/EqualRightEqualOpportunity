@@ -1130,75 +1130,97 @@ html {
 
 /* Responsive Styles */
 /* Mobile View (480px and below) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1080px) {
+    /* Header Adjustments */
     .head {
         margin-right: 0;
         justify-content: center;
     }
+
     .head p {
-        font-size: 14px;
+        font-size: 16px;
     }
+
     .headering {
         flex-direction: column;
-        padding: 5px;
+        padding: 8px;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
     }
+
+    /* Navigation Menu */
     .Main-Nav ul {
         flex-direction: column;
-        gap: 5px;
+        gap: 8px;
         display: none;
         position: absolute;
-        top: 50px;
-        right: 10px;
-        background: rgba(255, 255, 255, 0.9);
-        width: 200px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
-        padding: 10px;
+        top: 60px;
+        right: 15px;
+        background: rgba(255, 255, 255, 0.95);
+        width: 250px;
+        box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
+        padding: 12px;
     }
-    .nav li a{
+
+    .nav li a {
         color: #000000;
+        font-size: 18px;
+        text-align: center;
     }
+
     .Main-Nav ul.show {
         display: flex;
     }
+
     .menu-icon {
         display: block;
         cursor: pointer;
-        font-size: 24px;
-        padding: 10px;
+        font-size: 28px;
+        padding: 12px;
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 15px;
+        right: 15px;
         background: #0A97B0;
         color: white;
-        border-radius: 5px;
+        border-radius: 6px;
     }
+
+    /* Dropdown Menu */
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: rgba(255, 255, 255, 0.9);
-        min-width: 200px;
+        background-color: rgba(255, 255, 255, 0.95);
+        min-width: 220px;
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-        border-radius: 8px;
+        border-radius: 6px;
         overflow: hidden;
     }
+
     .dropdown-content.show {
         display: block;
     }
+
+    /* Main Content */
     .activities-container {
         grid-template-columns: 1fr;
     }
+
     .contact-form {
-        width: 90%;
-        padding: 15px;
+        width: 85%;
+        padding: 20px;
     }
+
     .summary-container, .chart-container {
         width: 100%;
     }
+
     .campaign-box {
-        width: 90%;
+        width: 85%;
         height: auto;
     }
+
     .campaign-image {
         width: 100%;
     }
@@ -1206,6 +1228,219 @@ html {
     .Container-One img {
         width: 100%;
         height: auto;
-        object-fit: contain; /* Ensures the whole image is visible without cropping */
+        object-fit: contain;
+    }
+
+    /* Adjusting Section Layouts */
+    .container-two-main-divider {
+        width: 85%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container-two-divider1 img {
+        max-width: 85%;
+    }
+
+    /* Group Member Section */
+    .members-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member {
+        width: 85%;
+        text-align: center;
+        padding: 12px;
+    }
+
+    /* Footer Adjustments */
+    .footer {
+        font-size: 14px;
+        padding: 18px;
+    }
+    .container-two {
+        width: 100%;
+        height: auto;
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container-two-main-divider {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(255, 255, 225, 0.7);
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .container-two-divider1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .container-two-divider1 img {
+        max-width: 80%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .container-two-divider2 {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .container-two-divider2 h1 {
+        font-size: 24px;
+        color: #0A97B0;
+        margin-bottom: 10px;
+    }
+
+    .container-two-divider2 p {
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .objectives-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .objectives-container h2 {
+        font-size: 22px;
+        color: #0A97B0;
+        margin-bottom: 10px;
+    }
+
+    .objectives-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .objectives-list li {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .target-audience {
+        font-size: 16px;
+        padding: 12px;
+        background: #E3F2FD;
+        border-radius: 8px;
+        font-weight: bold;
+        text-align: center;
+        color: #0A5EB0;
+    }
+    .campaign-box {
+        width: 90%;
+        min-height: 70%;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch; /* Ensure children stretch to fill width */
+    }
+    
+    /* Move the header to the top */
+    .campaign-header {
+        order: -1; /* Ensures it appears first */
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px; /* Space below the header */
+    }
+    
+    /* Ensure the carousel appears after the header */
+    .campaign-carousel {
+        flex-grow: 1; /* Allows it to take up remaining space */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .campaign-slide {
+        width: 100%;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .campaign-image {
+        width: 100%;
+        max-height: 350px;
+        object-fit: contain;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .campaign-slide h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .campaign-slide p {
+        font-size: 16px;
+        line-height: 1.4;
+        padding: 5px;
+    }
+
+    .campaign-prev,
+    .campaign-next {
+        padding: 10px 18px;
+        font-size: 16px;
+    }
+
+    .campaign-prev {
+        left: 10px;
+    }
+
+    .campaign-next {
+        right: 10px;
+    }
+
+    .Monitoring-Evaluation-Section {
+        width: 85%; /* Adjust width for medium screens */
+        padding: 20px;
+    }
+    .evaluation-container {
+        flex-direction: column; /* Stack items vertically */
+        gap: 15px;
+        align-items: center;
+    }
+    .chart-container {
+        width: 90%; /* Make chart slightly bigger */
+        order: -1; /* Move chart to the top */
+    }
+    .summary-container {
+        width: 90%; /* Adjust text summary width */
+        padding: 10px;
+        order: 1; /* Move text below the chart */
+        font-size: 14px; /* Slightly smaller font size */
+    }
+    .summary-container b {
+        font-size: 9.5px; /* Reduce bold text size */
+    }
+    .summary-container p,
+    .summary-container li {
+        font-size: 12px; /* Reduce paragraph and list font size */
+    }
+
+    .group-container img {
+        max-width: 80%; /* Adjust image size for better fit */
+        height: auto;
+        border-radius: 10px; /* Add subtle rounded corners */
+        margin: 10px auto; /* Center align and add spacing */
     }
 }
