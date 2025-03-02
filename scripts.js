@@ -276,3 +276,47 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.createElement("div");
+    menuIcon.classList.add("menu-icon");
+    menuIcon.innerHTML = "☰";
+    document.querySelector(".headering").appendChild(menuIcon);
+
+    const navMenu = document.querySelector(".Main-Nav ul");
+    const dropdownMenus = document.querySelectorAll(".dropdown-content");
+
+    menuIcon.addEventListener("click", function (event) {
+        event.stopPropagation(); // Prevents immediate closing when clicking menu icon
+        navMenu.classList.toggle("show");
+    });
+
+    document.querySelectorAll(".dropdown > a").forEach(dropdown => {
+        dropdown.addEventListener("click", function (event) {
+            event.preventDefault();
+            let dropdownContent = this.nextElementSibling;
+
+            // Close all other dropdowns
+            dropdownMenus.forEach(menu => {
+                if (menu !== dropdownContent) {
+                    menu.classList.remove("show");
+                }
+            });
+
+            // Toggle the clicked one
+            dropdownContent.classList.toggle("show");
+            event.stopPropagation(); // Prevents closing immediately when clicking inside dropdown
+        });
+    });
+
+    // Close dropdowns and nav when clicking outside
+    document.addEventListener("click", function () {
+        navMenu.classList.remove("show");
+        dropdownMenus.forEach(menu => menu.classList.remove("show"));
+    });
+
+    // Prevent nav from closing when clicking inside
+    navMenu.addEventListener("click", function (event) {
+        event.stopPropagation();
+    });
+});
+
