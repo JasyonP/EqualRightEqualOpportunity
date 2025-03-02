@@ -1124,3 +1124,6 @@ section h1{
     color: #000000;
     font-family: PExThin;
 }
+html {
+    scroll-behavior: smooth;
+}

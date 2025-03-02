@@ -102,31 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-document.addEventListener("DOMContentLoaded", function () {
-    const navLinks = document.querySelectorAll(".Main-Nav a , .head a,");
-
-    navLinks.forEach(link => {
-        link.addEventListener("click", function (event) {
-            const targetId = this.getAttribute("href");
-            if (targetId.startsWith("#")) {
-                event.preventDefault();
-
-                const targetSection = document.getElementById(targetId.substring(1)); // Get section ID
-
-                if (targetSection) {
-                    window.scrollTo({
-                        top: targetSection.offsetTop - 50, 
-                        behavior: "smooth"
-                    });
-
-                    history.pushState(null, null, " ");
-                }
-            }
-        });
-    });
-});
-
 function openLightbox(imgElement) {
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightbox-img");
@@ -274,3 +249,30 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".Main-Nav a, .head a");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", function (event) {
+            const targetId = this.getAttribute("href");
+            
+            // Ignore full URLs
+            if (!targetId.startsWith("#")) return;
+
+            event.preventDefault(); // Prevent default jump
+
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                window.scrollTo({
+                    top: targetSection.offsetTop - 50, // Adjust for fixed headers
+                    behavior: "smooth" // Smooth scrolling
+                });
+
+                // Update URL without breaking back button functionality
+                history.pushState(null, null, targetId);
+            }
+        });
+    });
+});
