@@ -1595,15 +1595,11 @@ html {
         .poster-meaning p, .logo-meaning p{
             font-size: 13px;
         }
+        .campaign-image {
+            max-width: 100%;
+            height: 200px;
+        }
         
         
         
-        
-}
-
-@media screen and (max-width: 768px) {
-    .campaign-image {
-        max-width: 100%;
-        height: auto;
-    }
 }
