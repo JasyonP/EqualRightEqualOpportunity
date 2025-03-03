@@ -1475,7 +1475,7 @@ html {
         width: 95%;
     }
     .campaign-image {
-        max-height: 200px;
+        max-height: 400px;
     }
     .Container-One img {
         width: 100%;
@@ -1601,4 +1601,9 @@ html {
         
 }
 
-
+@media screen and (max-width: 768px) {
+    .campaign-image {
+        max-width: 100%;
+        height: auto;
+    }
+}
