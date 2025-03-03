@@ -150,7 +150,7 @@ li:hover {
 .Container-One{
     background-color: rgb(255, 207, 239);
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 .Container-One img {
     width: 100%;
@@ -267,7 +267,7 @@ body {
 }
 
 .activities-section h1 {
-    font-size: 28px;
+    font-size: 23px;
     color: #0A5EB0;
     margin-bottom: 20px;
 }
@@ -391,7 +391,7 @@ body {
 
 /* Styling the header */
 .campaign-header {
-    font-size: 32px;
+    font-size: 25px;
     font-weight: bold;
     background: linear-gradient(to right, #0A97B0, #0A5EB0);
     -webkit-background-clip: text;
@@ -698,6 +698,7 @@ font-family: PRegu;
 .footer-left{
     display: flex;
     font-family: PExThin;
+    font-size: 9px;
 }
 
 .footer-right {
@@ -708,7 +709,7 @@ font-family: PRegu;
 .footer-right a {
     color: #FFCFEF;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .footer-right a:hover {
@@ -1222,7 +1223,8 @@ html {
     }
 
     .campaign-image {
-        width: 100%;
+        width: 300px;  /* Adjusts for small screens */
+        height: 20px;
     }
 
     .Container-One img {
@@ -1328,7 +1330,7 @@ html {
     }
 
     .objectives-list li {
-        font-size: 16px;
+        font-size: 12px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1399,7 +1401,7 @@ html {
     .campaign-prev,
     .campaign-next {
         padding: 10px 18px;
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .campaign-prev {
@@ -1416,31 +1418,166 @@ html {
     }
     .evaluation-container {
         flex-direction: column; /* Stack items vertically */
-        gap: 15px;
+        gap: 20px;
         align-items: center;
     }
     .chart-container {
-        width: 90%; /* Make chart slightly bigger */
+        width: 95%; /* Make chart slightly bigger */
         order: -1; /* Move chart to the top */
     }
     .summary-container {
         width: 90%; /* Adjust text summary width */
-        padding: 10px;
+        padding: 15px;
         order: 1; /* Move text below the chart */
         font-size: 14px; /* Slightly smaller font size */
+        text-align: center;
     }
     .summary-container b {
-        font-size: 9.5px; /* Reduce bold text size */
+        font-size: 16px; /* Reduce bold text size */
     }
     .summary-container p,
     .summary-container li {
-        font-size: 12px; /* Reduce paragraph and list font size */
+        font-size: 13px; /* Reduce paragraph and list font size */
     }
-
     .group-container img {
         max-width: 80%; /* Adjust image size for better fit */
         height: auto;
         border-radius: 10px; /* Add subtle rounded corners */
         margin: 10px auto; /* Center align and add spacing */
     }
+
+
+    /*-----------------------------*/
+    /* Main Content Adjustments */
+    .activities-container {
+        grid-template-columns: 1fr;
+    }
+    .contact-form {
+        width: 95%;
+        padding: 15px;
+    }
+    .summary-container, .chart-container {
+        width: 100%;
+    }
+    .campaign-box {
+        width: 95%;
+    }
+    .campaign-image {
+        max-height: 200px;
+    }
+    .Container-One img {
+        width: 100%;
+    }
+    .container-two-divider1 img {
+        max-width: 85%;
+    }
+    .container-two-divider2 h1 {
+        font-size: 20px;
+    }
+    .container-two-divider2 p {
+        font-size: 14px;
+    }
+    .campaign-slide h2 {
+        font-size: 18px;
+    }
+    .campaign-slide p {
+        font-size: 14px;
+    }
+    .campaign-prev, .campaign-next {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+    .Monitoring-Evaluation-Section {
+        width: 95%;
+        padding: 15px;
+    }
+    .evaluation-container {
+        gap: 15px;
+    }
+    .chart-container {
+        width: 100%;
+    }
+    .summary-container {
+        width: 100%;
+        padding: 12px;
+        font-size: 13px;
+    }
+    .summary-container b {
+        font-size: 14px;
+    }
+    .summary-container p,
+    .summary-container li {
+        font-size: 12px;
+    }
+    .group-container img {
+        max-width: 75%;
+    }
+    .evaluation-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center items */
+        justify-content: center;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .chart-container {
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Center the chart */
+        align-items: center;
+        margin: 0 auto; /* Ensure it stays centered */
+    }
+
+    .summary-container {
+        width: 100%;
+        padding: 12px;
+        font-size: 13px;
+        text-align: center; /* Keep text aligned */
+    }
+        /* Move Navigation Menu to the Right */
+        .Main-Nav {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    
+        .Main-Nav ul {
+            position: absolute;
+            top: 50px;
+            right: 10px;
+            width: 180px; /* Smaller width */
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+            padding: 8px;
+        }
+        
+        .nav li {
+            font-size: 14px; /* Reduce font size */
+            padding: 8px 12px;
+        }
+    
+        /* Hover Effect: Slightly Shrink & Change Background */
+        .nav li:hover {
+            transform: scale(0.95);
+            background-color: rgba(10, 151, 176, 0.5);
+        }
+    
+        /* Menu Icon Adjustments */
+        .menu-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 22px; /* Slightly smaller */
+            padding: 8px;
+            background: #0A97B0;
+            color: white;
+            border-radius: 5px;
+        }
+        
+        
+        
+        
 }
+
