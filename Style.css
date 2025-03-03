@@ -1166,7 +1166,7 @@ html {
     }
 
     .nav li a {
-        color: #000000;
+        color: #0A97B0;
         font-size: 18px;
         text-align: center;
     }
@@ -1446,6 +1446,18 @@ html {
         margin: 10px auto; /* Center align and add spacing */
     }
 
+    .group-container h2{
+        font-size: 30px;
+    }
+    .member h3{
+        font-size: 15px;
+    }
+    .member p{
+        font-size: 12px;
+    }
+    .member p strong{
+        font-family: PMeds;
+    }
 
     /*-----------------------------*/
     /* Main Content Adjustments */
@@ -1575,9 +1587,18 @@ html {
             color: white;
             border-radius: 5px;
         }
+
+        .poster-meaning h3, .logo-meaning h3{
+            font-size: 30px;
+            text-align: center;
+        }
+        .poster-meaning p, .logo-meaning p{
+            font-size: 13px;
+        }
         
         
         
         
 }
+
 

@@ -319,4 +319,3 @@ document.addEventListener("DOMContentLoaded", function () {
         event.stopPropagation();
     });
 });
-
