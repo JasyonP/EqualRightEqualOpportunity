@@ -1598,8 +1598,12 @@ html {
         .campaign-image {
             max-width: 100%;
             height: 200px;
+            object-fit: contain; 
         }
-        
+        .campaign-slide p{
+            font-size: 12px;
+        }
+
         
         
 }
