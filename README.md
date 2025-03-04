@@ -2,6 +2,8 @@
 
 Welcome to the Rights & Opportunities website! This platform advocates for gender equality, inclusivity, and empowerment, ensuring fair opportunities for all individuals regardless of gender. 🎨✨
 
+**Visit Here!:** https://jaysoncoding2022.github.io/EqualRight.github.io/
+
 📌 Features
 
 ✅ Home Page – Overview of the advocacy mission 🏡✅ About Us – Learn about our purpose and initiatives ℹ️✅ Activities – Campaigns and events promoting gender rights 🎭✅ Campaigns – Showcasing efforts towards equality 📢✅ Monitoring & Evaluation – Progress tracking and impact analysis 📊✅ Contact Us – Get in touch for support or collaboration 📞✅ More Pages – Explore The Poster, The Logo, and Group Members 🎨👥
