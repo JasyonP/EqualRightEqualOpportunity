@@ -1159,6 +1159,21 @@ html {
 .lastlast{
     height: 1px;
 }
+.summary-container p {
+    text-align: justify;
+}
+.campaign-slide p{
+    text-align: left;
+}
+.card-front p{
+    text-align: justify;
+}
+.objectives-container ul{
+    text-align: left;
+}
+.poster-meaning p, .logo-meaning p, .member p{
+    text-align: justify;
+}
 
 /* Responsive Styles */
 /* Mobile View (480px and below) */
@@ -1642,18 +1657,7 @@ html {
             font-family: PExThin;
             text-align: left;
         }
-        .summary-container p {
-            text-align: justify;
-        }
-        .campaign-slide p{
-            text-align: justify;
-        }
-        .card-front p{
-            text-align: justify;
-        }
-        .objectives-container ul{
-            text-align: left;
-        }
-        
+
         
 }
+
