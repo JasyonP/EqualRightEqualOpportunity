@@ -238,6 +238,7 @@ li:hover {
     font-size: 1rem;
     margin-right: 10px;
     text-align: start;
+    animation: pump 1s infinite alternate;
 }
 
 /* Target Audience Styling */
@@ -255,6 +256,17 @@ body {
     background-color: #FFCFEF; 
 
 }
+
+@keyframes pump {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
 /* Activities Section */
 .activities-section {
     width: 70%;
@@ -348,6 +360,10 @@ body {
 .icon {
     font-size: 40px;
     margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.activity-card:hover .icon {
+    animation: pump 0.5s infinite ease-in-out;
 }
 
 /* Titles */
@@ -364,6 +380,14 @@ body {
     font-size: 14px;
     line-height: 1.5;
     font-family: PRegu;
+}
+@keyframes pump {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
 }
 
 /* Main Campaign Box */
@@ -1610,7 +1634,23 @@ html {
         .lastlast{
             height: 120px;
         }
-
+        .summary-container li {
+            font-size: 10px; /* Reduce paragraph and list font size */
+            font-family: PExThin;
+            text-align: left;
+        }
+        .summary-container p {
+            text-align: justify;
+        }
+        .campaign-slide p{
+            text-align: justify;
+        }
+        .card-front p{
+            text-align: justify;
+        }
+        .objectives-container ul{
+            text-align: left;
+        }
         
         
 }
