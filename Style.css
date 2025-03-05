@@ -1129,6 +1129,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.lastlast{
+    height: 1px;
+}
+
 /* Responsive Styles */
 /* Mobile View (480px and below) */
 @media screen and (max-width: 1080px) {
@@ -1602,6 +1606,9 @@ html {
         }
         .campaign-slide p{
             font-size: 12px;
+        }
+        .lastlast{
+            height: 120px;
         }
 
         
