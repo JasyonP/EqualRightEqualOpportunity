@@ -108,6 +108,9 @@ li:hover {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
+.menu-icon {
+    color: #0A97B0;
+}
 
 .dropdown-content {
     display: none;
@@ -1550,7 +1553,7 @@ html {
         font-size: 12px;
     }
     .group-container img {
-        max-width: 75%;
+        max-width: 85%;
     }
     .evaluation-container {
         display: flex;
