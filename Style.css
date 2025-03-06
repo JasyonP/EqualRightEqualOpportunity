@@ -1095,6 +1095,7 @@ section h1{
     gap: 2px;
     opacity: 0; /* Start hidden */
     transition: opacity 1s ease-in-out; /* Smooth fade */
+    z-index: 1;
 }
 
 .social-sidebar p{
