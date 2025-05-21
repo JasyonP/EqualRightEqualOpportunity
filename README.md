@@ -1,3 +1,5 @@
+## Gender and Society Project of BSIT 3A Group 3
+
 🌍 Gender Equality Website
 
 Welcome to the Rights & Opportunities website! This platform advocates for gender equality, inclusivity, and empowerment, ensuring fair opportunities for all individuals regardless of gender. 🎨✨
