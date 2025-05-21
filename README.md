@@ -2,7 +2,7 @@
 
 Welcome to the Rights & Opportunities website! This platform advocates for gender equality, inclusivity, and empowerment, ensuring fair opportunities for all individuals regardless of gender. 🎨✨
 
-**Visit Here!:** https://jasyonp.github.io/EqualRight.github.io/
+**Visit Here!:** [Website Link](https://jasyonp.github.io/EqualRightEqualOpportunity/).
 
 📌 Features
 
